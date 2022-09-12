@@ -13,10 +13,10 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public String excute() {
-        Order order = null;
-        Optional.of(order).ifPresent(p -> checkValue(p));
+        Order order = new Order();
+        Optional.ofNullable(order).ifPresent(p -> checkValue(p));
         System.out.println(order);
-        Optional.ofNullable(order).filter(p -> p.getMsg() == null).orElseThrow(() -> new BusinessException(Constants.CODE_ERROR, "请检查用户密码是否正确"));
+        Optional.ofNullable(order).orElseThrow(() -> new BusinessException(Constants.CODE_ERROR, "请检查用户密码是否正确"));
         return null;
     }
 

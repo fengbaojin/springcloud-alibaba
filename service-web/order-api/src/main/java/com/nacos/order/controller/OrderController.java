@@ -1,7 +1,13 @@
 package com.nacos.order.controller;
 
+import com.nacos.order.common.Constants;
+import com.nacos.order.exception.BusinessException;
+import com.nacos.order.service.OrderService;
+import io.swagger.annotations.Api;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -10,11 +16,15 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @RequestMapping(value = "/order")
+@Api(description = "订单服务")
 public class OrderController {
 
+    @Autowired
+    private OrderService orderService;
+
     @GetMapping("/service")
-    public String service(){
-        System.out.printf("测试一下");
-        return "测试成功";
+    public String service() {
+        String order = orderService.excute();
+        return order;
     }
 }

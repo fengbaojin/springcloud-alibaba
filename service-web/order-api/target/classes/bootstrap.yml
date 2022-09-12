@@ -1,5 +1,5 @@
 server:
-  port: 56030 #启动端口 命令行注入
+  port: 56031 #启动端口 命令行注入
 
 spring:
   application:

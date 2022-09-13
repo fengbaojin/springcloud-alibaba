@@ -1,4 +1,4 @@
-package com.nacos.order.config;
+package com.nacos.common.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

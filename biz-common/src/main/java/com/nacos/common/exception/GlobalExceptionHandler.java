@@ -1,4 +1,4 @@
-package com.nacos.order.exception;
+package com.nacos.common.exception;
 
 import com.nacos.common.bean.ResponseResult;
 import org.springframework.web.bind.annotation.ControllerAdvice;

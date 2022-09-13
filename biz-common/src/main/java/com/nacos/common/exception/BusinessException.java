@@ -1,4 +1,5 @@
-package com.nacos.order.exception;
+package com.nacos.common.exception;
+
 
 import lombok.Getter;
 

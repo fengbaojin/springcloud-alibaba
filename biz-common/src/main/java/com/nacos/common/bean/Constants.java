@@ -1,4 +1,4 @@
-package com.nacos.order.common;
+package com.nacos.common.bean;
 
 public interface Constants {
 

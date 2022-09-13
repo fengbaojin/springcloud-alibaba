@@ -12,7 +12,7 @@
         <module>service-web</module>
         <module>service-web/user-api</module>
         <module>service-web/order-api</module>
-        <module>common</module>
+        <module>biz-common</module>
     </modules>
 
     <packaging>pom</packaging>

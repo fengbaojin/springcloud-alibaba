@@ -13,6 +13,7 @@
         <module>service-web/user-api</module>
         <module>service-web/order-api</module>
         <module>biz-common</module>
+        <module>biz-common-service</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -92,13 +93,13 @@
                 <version>2.9.2</version>
             </dependency>
 
-            <!-- Mybatis-plus时引入的配置start -->
             <!--mybatis-plus依赖-->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
             </dependency>
 
+            <!--mybatis依赖-->
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -110,6 +111,14 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <scope>runtime</scope>
+            </dependency>
+
+            <!--lombok 依赖-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.22</version>
+                <scope>provided</scope>
             </dependency>
 
         </dependencies>

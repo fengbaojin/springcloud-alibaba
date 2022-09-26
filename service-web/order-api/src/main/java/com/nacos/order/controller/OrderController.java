@@ -1,5 +1,6 @@
 package com.nacos.order.controller;
 
+import com.nacos.common.bean.ResponseResult;
 import com.nacos.order.service.OrderService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +21,9 @@ public class OrderController {
     private OrderService orderService;
 
     @GetMapping("/service")
-    public String service() {
+    public ResponseResult service() {
         String order = orderService.excute();
-        return order;
+        return ResponseResult.success(order);
     }
 
 }

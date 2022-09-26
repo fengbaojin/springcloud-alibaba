@@ -1,4 +1,4 @@
-package com.nacos.order.entity;
+package com.nacos.common.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

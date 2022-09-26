@@ -16,4 +16,5 @@ spring:
         server-addr: 124.70.80.234:8848 # 配置中心地址
         file-extension: yaml
         namespace: e034c7e8-68dd-4e68-a92a-c5dacee24c90 # 开发环境
-        group: DEFAULT_GROUP # xx业务组
+        group: DEFAULT_GROUP # xx业务
+
